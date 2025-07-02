@@ -1,15 +1,36 @@
-Description:
+#Missing Number Finder
+This Java program finds the missing number in a sequence of consecutive natural numbers. It assumes that one number is missing from the complete sequence.
 
-This program finds the missing number from a sequence of consecutive natural numbers from 1 to n, where one number is missing. The user inputs n-1 numbers, and the program calculates the missing one using the sum formula.​
- 
-The sum of user inputs is subtracted from the expected sum to find the missing number.
+📌 Features
+Takes an array of numbers from the user.
 
-▶️ How to Run:
-Compile and run the program.
+Calculates the missing number from the series.
 
-Enter the count of numbers (n-1) you're going to input.
+Uses mathematical formula for efficiency.
 
-Enter the numbers one by one.
+💻 How to Run
+Save the code in a file named missingNumber.java.
 
-The program outputs : the missing number.
+Open any Java IDE or use a terminal/command prompt with JDK installed.
+
+Compile the program using:
+javac missingNumber.java
+Run the program:
+java missingNumber
+Input the elements as prompted (excluding the missing number).
+
+📎 Example
+Enter the number of elements to be added : 4  
+1  
+2  
+4  
+5  
+The missing number is 3
+🧠 Logic Explanation
+The sum of first n natural numbers is given by:
+(n∗(n+1))/2
+
+Since one number is missing, we use n + 1 in the formula.
+
+Subtract the sum of the user-entered numbers from the expected sum to get the missing number.
 
